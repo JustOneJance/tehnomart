@@ -1,0 +1,22 @@
+@import "variables";
+.main-navigation {
+  height: 55px;
+  width: 100%;
+  background-color: #32425c;
+  box-shadow: 0 5px #293449;
+
+}
+.main-navigation__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  align-items: baseline;
+  padding-left: 60px;
+  padding-right: 60px;
+  color: #ffffff;
+}
+.main-navigation__item {
+  display: block;
+  color: #ffffff;
+}

@@ -1,0 +1,24 @@
+.description-company {
+  width: 540px;
+}
+.description-company__transport-list {
+  margin: 0;
+  margin-left: 25px;
+  margin-bottom: 35px;
+  padding:0;
+  list-style-image: url("../img/marker-list.png");
+
+}
+.description-company__item {
+  list-style-type: none;
+  line-height: 20px;
+  padding-top: 20px;
+}
+
+.contacts {
+  width: 300px;
+}
+.map {
+  margin-top: 25px;
+  margin-bottom: 45px;
+}

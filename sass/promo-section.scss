@@ -1,0 +1,51 @@
+@import "variables";
+
+.promo-section {
+  display: block;
+  width: 300px;
+  height: 125px;
+  padding-left: 25px;
+  &--materials {
+      background: url(../img/icon-1.png) no-repeat 210px;
+      background-color: #ffbf47;
+  }
+  &--tools {
+    background: url(../img/icon-2.png) no-repeat 210px;
+    background-color: #3bbce3;
+  }
+  &--equipment {
+    background: url(../img/icon-3.png) no-repeat 210px;
+    background-color: #dc91da;
+  }
+  &--discont {
+    background: url(../img/icon-4.png) no-repeat 210px;
+    background-color: #8ed78f;
+  }
+  &--delivery {
+    background: url(../img/icon-5.png) no-repeat 210px;
+    background-color: #ffc047;
+  }
+
+}
+.promo-section__title {
+  font-size: 24px;
+  color: #ffffff;
+}
+.promo-section__btn {
+  width: 135px;
+  margin-top: -10px;
+  background-color:rgba(0,0,0,0.1);
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  height: 265px;
+}
+.slider {
+  height: 265px;
+  width: 620px;
+}

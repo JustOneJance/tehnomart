@@ -1,0 +1,23 @@
+@import "variables";
+
+.page-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $margin-content;
+  padding-right: $margin-content;
+  background-color: #293449;
+  height: 40px;
+}
+.page-header__search {
+  width: 260px;
+  padding-left: 45px;
+
+}
+.page-header__btn {
+  width: 150px;
+  padding-left: 45px;
+  margin-right: 5px;
+  color: black;
+}

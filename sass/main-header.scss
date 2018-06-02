@@ -1,0 +1,51 @@
+@import "variables";
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 280px;
+  padding-top: 45px;
+  padding-left: $margin-content;
+  padding-right: $margin-content;
+  background-color: $light-blue;
+}
+.main-header__description {
+  display: block;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 21px;
+  margin-left: 50px;
+  width: 320px;
+  color: #ee3643;
+}
+.main-header__contacts {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.main-header__login {
+  display: block;
+  width: 90px;
+  height: 45px;
+  padding-left: 50px;
+  line-height: 45px;
+  background-color: #ffffff;
+}
+.login {
+  font-size: 21px;
+  color: #000000;
+}
+.main-header__registration {
+  display: block;
+  width: 150px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background-color: #ffffff;
+}
+.registration {
+  font-size: 21px;
+  color: #000000;
+}

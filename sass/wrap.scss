@@ -1,0 +1,28 @@
+@import "variables";
+.wrap {
+  padding-left: $margin-content;
+  padding-right: $margin-content;
+  &--white {
+        background-color: #ffffff;
+  }
+  &--blue {
+    background-color: #f4f8fa;
+  }
+  &--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+}
+.wrap__title {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-top: 65px;
+}
+.wrap__text {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}

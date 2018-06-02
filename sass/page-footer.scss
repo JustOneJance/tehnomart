@@ -1,0 +1,44 @@
+@import "variables";
+.page-footer {
+
+}
+.page-footer__first {
+  margin-top: 0;
+  padding-left: $margin-content;
+  padding-right: $margin-content;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+.page-footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  align-items: flex-end;
+  padding-left: 0;
+  width: 100%;
+  margin-bottom: 30px;
+  &--shop {
+    margin: 0;
+    color: #ffd180;
+  }
+}
+.page-footer__adress {
+  line-height: 24px;
+  width: 550px;
+}
+.page-footer__second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: $margin-content;
+  padding-right: $margin-content;
+  background-color: #293449;
+  color: #ffffff;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+.page-footer__link {
+  color: #ffd180;
+}
