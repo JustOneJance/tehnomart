@@ -26,6 +26,7 @@
   text-align: center;
 }
 .main-header__login {
+  position: relative;
   display: block;
   width: 90px;
   height: 45px;
@@ -33,9 +34,19 @@
   line-height: 45px;
   background-color: #ffffff;
 }
+.login::before {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/icon-home.png") no-repeat;
+}
 .login {
   font-size: 21px;
   color: #000000;
+
 }
 .main-header__registration {
   display: block;
@@ -48,4 +59,12 @@
 .registration {
   font-size: 21px;
   color: #000000;
+}
+.login:hover,
+.registration:hover {
+  color: #ee3643;
+}
+.login:focus,
+.registration:focus {
+  opacity: 0.3;
 }

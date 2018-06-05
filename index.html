@@ -4,16 +4,18 @@
         <meta charset="UTF-8">
         <title class="title">Tehnomart-main</title>
         <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="page-header">
             <div class="logo">техномарт</div>
-            <form action="#" method="post">
-                <input class="page-header__search" type="search" name="search">
+            <form class="page-header__flex-container" action="#" method="get">
+                <button class="page-header__btn-search" type="submit"></button>
+                <input class="page-header__search" value="Поиск" type="search" name="search">
             </form>
-            <button class="page-header__btn page-header__btn--bookmarts">Закладки</button>
-            <button class="page-header__btn page-header__btn-cart">Корзина</button>
+            <a href="" class="page-header__link page-header__link--bookmarts">Закладки:0</a>
+            <a href="" class="page-header__link page-header__link--cart">Корзина:0</a>
             <button class="btn btn--green">Оформить заказ</button>
         </header>
         <main class="main-container">
@@ -31,30 +33,30 @@
                         <a class="login" href=""> Войти</a>
                  </div>
                 <div class="main-header__registration">
-                    <a class="registration">Регистрация</a>
+                    <a class="registration" href="">Регистрация</a>
                 </div>
                 <nav class="main-navigation">
                     <ul class="main-navigation__list">
                         <li class="main-navigation__item">
-                            <a href="">Главная</a>
+                            <a class="link" href="">Главная</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="">Компания</a>
+                            <a class="link" href="">Компания</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="">Каталог</a>
+                            <a class="link" href="">Каталог</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="">Новости</a>
+                            <a class="link" href="">Новости</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="">Спецпредложения</a>
+                            <a class="link" href="">Спецпредложения</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="">Доставка</a>
+                            <a class="link" href="">Доставка</a>
                         </li>
                         <li class="main-navigation__item">
-                            <a href="">Контакты</a>
+                            <a class="link" href="">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -93,32 +95,32 @@
                     </div>
                     <div class="flex-container-row flex-container-row--popular" >
                         <article class="item">
-                            <img src="../img/snippet-32961.png">
-                            <h3 class="catalog__name">Перфоратор BOSCH<br>
+                            <img src="img/large.png">
+                            <h3 class="item__name">Перфоратор BOSCH<br>
                                 BFG 9000</h3>
-                            <div class="catalog__price catalog__price--old">32500 р.</div>
-                            <div class="catalog__price">25500 р.</div>
+                            <div class="item__price item__price--old">32500 р.</div>
+                            <div class="item__price">25500 р.</div>
                         </article>
                         <article class="item">
-                            <img class="popular__img" src="../img/snippet-18927.png" width="127" height="112">
-                            <h3 class="catalog__name">Перфоратор BOSCH<br>
+                            <img src="img/middle.png" width="218" height="180">
+                            <h3 class="item__name">Перфоратор BOSCH<br>
                                 BFG 3000</h3>
-                            <div class="catalog__price catalog__price--old">22500 р.</div>
-                            <div class="catalog__price">15500 р.</div>
+                            <div class="item__price item__price--old">22500 р.</div>
+                            <div class="item__price">15500 р.</div>
                         </article>
                         <article class="item">
-                            <img src="../img/snippet-945.png">
-                            <h3 class="catalog__name">Перфоратор BOSCH<br>
+                            <img src="img/mini.png" width="218" height="180">
+                            <h3 class="item__name">Перфоратор BOSCH<br>
                                 BFG 6000</h3>
-                            <div class="catalog__price catalog__price--old">30500 р.</div>
-                            <div class="catalog__price">25500 р.</div>
+                            <div class="item__price item__price--old">30500 р.</div>
+                            <div class="item__price">25500 р.</div>
                         </article>
                         <article class="item">
-                            <img src="../img/snippet-18927.png">
-                            <h3 class="catalog__name">Перфоратор BOSCH<br>
+                            <img src="img/middle.png" width="218" height="180">
+                            <h3 class="item__name">Перфоратор BOSCH<br>
                                 BFG 2000</h3>
-                            <div class="catalog__price catalog__price--old"> </div>
-                            <div class="catalog__price">12500 р.</div>
+                            <div class="item__price item__price--old"> </div>
+                            <div class="item__price">12500 р.</div>
                         </article>
                     </div>
                 </div>
@@ -128,30 +130,30 @@
                         <button class="btn popular__btn">все производители</button>
                     </div>
                     <div class="flex-container-row flex-container-row--popular">
-                        <article class="brand">
+                        <a href="" class="brand">
                             <img src="../img/bosch.png" >
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/Makita.png">
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/DeWALT.png">
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/interscol.png">
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/Hitachi.png">
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/LG.png">
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/AEG.png">
-                        </article>
-                        <article class="brand">
+                        </a>
+                        <a href="" class="brand">
                             <img src="../img/Metabo.png">
-                        </article>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -204,19 +206,19 @@
                 <ul class="page-footer__nav">
                     <li class="logo logo--footer">техномарт</li>
                     <li class="page-footer__main-nav">
-                        <a href="">Компания</a>
+                        <a class="page-footer__menu-link" href="">Компания</a>
                     </li>
                     <li class="page-footer__main-nav">
-                        <a href="">Новости</a>
+                        <a class="page-footer__menu-link" href="">Новости</a>
                     </li>
                     <li class="page-footer__main-nav">
-                        <a href="">Католог</a>
+                        <a class="page-footer__menu-link" href="">Католог</a>
                     </li>
                     <li class="page-footer__main-nav">
-                        <a href="">Доставка</a>
+                        <a class="page-footer__menu-link" href="">Доставка</a>
                     </li>
                     <li class="page-footer__main-nav">
-                        <a href="">Контакты</a>
+                        <a class="page-footer__menu-link" href="">Контакты</a>
                     </li>
                 </ul>
                 <div class="flex-container-row flex-container-row--footer">
@@ -225,17 +227,17 @@
                         <span class="page-footer__tel">+7 (812) 555-05-55</span>
                     </div>
                     <ul class="page-footer__nav page-footer__nav--shop">
-                        <li class="page-footer__shop=nav">
-                            <a href="">Материалы</a>
+                        <li class="page-footer__shop">
+                            <a class="page-footer__menu-link" href="">Материалы</a>
                         </li>
                         <li class="page-footer__shop">
-                            <a href="">Техника</a>
-                        </li>
-                        <li class="page-footer__shov">
-                            <a href="">Инструмент</a>
+                            <a class="page-footer__menu-link" href="">Техника</a>
                         </li>
                         <li class="page-footer__shop">
-                            <a href="">Спецпредложения</a>
+                            <a class="page-footer__menu-link" href="">Инструмент</a>
+                        </li>
+                        <li class="page-footer__shop">
+                            <a class="page-footer__menu-link" href="">Спецпредложения</a>
                         </li>
                     </ul>
                 </div>
@@ -246,9 +248,9 @@
                     <span>Все права защищены</span>
                 </section>
                 <section class="page-footer__social">
-                    <a class="social-btn social_btn--vk" href="#">Вконтакте</a>
-                    <a class="social-btn social_btn--fb" href="#">Фейсбук</a>
-                    <a class="social-btn social_btn--inst" href="#">Инстаграм</a>
+                    <a class="social social--vk" href="http://vk.com/htmlacademy"></a>
+                    <a class="social social--fb" href="http://www.facebook.com/htmlacademy"></a>
+                    <a class="social social--inst" href="#"></a>
                 </section>
                 <section class="page-footer__feedback">
                     <span>Обратная связь:</span><br>

@@ -24,6 +24,11 @@
     color: #ffd180;
   }
 }
+
+.page-footer__main-nav:focus,
+.page-footer__shop:focus {
+  opacity: 0.5;
+}
 .page-footer__adress {
   line-height: 24px;
   width: 550px;
@@ -41,4 +46,16 @@
 }
 .page-footer__link {
   color: #ffd180;
+}
+.page-footer__menu-link:hover {
+  text-decoration: underline;
+}
+.page-footer__menu-link:focus {
+  opacity: 0.5;
+}
+.page-footer__link:hover {
+  text-decoration: underline;
+}
+.page-footer__link:focus {
+  color: #ee3643
 }

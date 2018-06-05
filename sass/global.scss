@@ -1,3 +1,4 @@
+@import "variables";
 header,
 body,
 footer {
@@ -30,17 +31,20 @@ a {
   &--map {
     width: 300px;
   }
+  &--green {
+    background-color: #63a63e;
+  }
 
 }
 .flex-container-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-top: 60px;
   &--popular {
     margin-top: 20px;
     margin-bottom: 20px;
+    flex-wrap: wrap;
   }
   &--footer {
     margin-top: 0;
@@ -48,4 +52,17 @@ a {
     flex-wrap: nowrap;
     align-items: flex-start;
   }
+}
+.block-title {
+  display: block;
+  height: 90px;
+  margin-left: $margin-content;
+  margin-right: $margin-content;
+  background-color: $light-blue;
+  font-size: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  line-height: 90px;
+  font-weight: 400;
+  padding-left: 30px;
 }

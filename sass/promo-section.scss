@@ -35,6 +35,13 @@
   width: 135px;
   margin-top: -10px;
   background-color:rgba(0,0,0,0.1);
+  outline: none;
+  &:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+  &:focus {
+    background-color: rgba(0,0,0,0.3);
+  }
 }
 .flex-container-column {
   display: flex;
