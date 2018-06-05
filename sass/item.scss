@@ -1,0 +1,26 @@
+.item {
+  display: inline-block;
+  width: 220px;
+  height: 315px;
+  border: 1px solid #eaeaea;
+}
+.item__name {
+  text-align: center;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+.item__price {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  background: url(../img/price.png) no-repeat 50px;
+  &--old {
+    min-height: 20px;
+    background: none;
+    color: #a9a9a9;
+    text-decoration: line-through;
+  }
+}

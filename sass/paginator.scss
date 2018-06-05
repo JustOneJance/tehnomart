@@ -1,0 +1,32 @@
+.paginator {
+  margin-top: 50px;
+}
+.paginator__page {
+  display: inline-block;
+  min-width: 20px;
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #000000;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+  &--next {
+    width: 140px;
+  }
+  &--current {
+    background-color: #ee3643;
+  }
+  &:hover {
+    border-color: #bdc6ca;
+  }
+  &:focus {
+    border-color: #ee3744;
+  }
+
+}

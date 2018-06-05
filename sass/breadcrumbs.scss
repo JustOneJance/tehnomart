@@ -1,0 +1,33 @@
+@import "variables";
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  height: 60px;
+  margin-left: $margin-content;
+  margin-right: $margin-content;
+  list-style: none;
+  padding: 0;
+}
+.breadcrumbs__item {
+  padding-left: 25px;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    margin-right: 15px;
+    background: url("../img/icon-right-small.png") no-repeat;}
+  &--home {
+    padding-left: 0;
+    width: 15px;
+    &::before {
+      display: none;
+    }
+  }
+}
+

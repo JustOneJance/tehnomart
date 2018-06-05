@@ -1,0 +1,113 @@
+@import "variables";
+.filter {
+  display: flex;
+  flex-direction: column;
+  margin-left: $margin-content;
+  margin-right: 20px;
+  width: 220px;
+}
+.filter__title {
+  display: block;
+  height: 40px;
+  background-color: $light-red;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding-left: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.group-filters {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-bottom: 2px solid $border-color;
+  margin-top: 20px;
+  &--last {
+    border-bottom: none;
+  }
+}
+.group-filters__title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.group-filters__checkbox {
+  display: none;
+}
+.group-filters__checkbox + .group-filters__label::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-off.png") 1px no-repeat;
+  position: absolute;
+  left: -15px;
+}
+.group-filters__checkbox + .group-filters__label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-left: 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  height: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.group-filters__checkbox:checked + .group-filters__label::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on.png") 1px no-repeat;
+  position: absolute;
+  left: -15px;
+}
+.group-filters__radio {
+  display: none;
+}
+.group-filters__radio + .group-filters__label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 23px;
+  margin-left: 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15px;
+  height: 25px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.group-filters__radio + .group-filters__label::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 25px;
+  background: url("../img/radio-off.png") 1px no-repeat;
+  position: absolute;
+  left: -13px
+}
+.group-filters__radio:checked + .group-filters__label::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 25px;
+  background: url("../img/radio-on.png") 1px no-repeat;
+  position: absolute;
+  left: -13px;
+}
+.group-filters__submit {
+  width: 140px;
+  height: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid $border-color;
+  margin-top: 75px;
+}
