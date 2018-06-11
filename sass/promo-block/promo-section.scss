@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .promo-section {
   display: block;
@@ -7,23 +7,23 @@
   height: 125px;
   padding-left: 25px;
   &--materials {
-      background: url(../img/icon-1.png) no-repeat 210px;
+      background: url(../../img/icon-1.png) no-repeat 210px;
       background-color: #ffbf47;
   }
   &--tools {
-    background: url(../img/icon-2.png) no-repeat 210px;
+    background: url(../../img/icon-2.png) no-repeat 210px;
     background-color: #3bbce3;
   }
   &--equipment {
-    background: url(../img/icon-3.png) no-repeat 210px;
+    background: url(../../img/icon-3.png) no-repeat 210px;
     background-color: #dc91da;
   }
   &--discont {
-    background: url(../img/icon-4.png) no-repeat 210px;
+    background: url(../../img/icon-4.png) no-repeat 210px;
     background-color: #8ed78f;
   }
   &--delivery {
-    background: url(../img/icon-5.png) no-repeat 210px;
+    background: url(../../img/icon-5.png) no-repeat 210px;
     background-color: #ffc047;
   }
   &--new::before {
@@ -32,7 +32,7 @@
     width: 60px;
     height: 59px;
     left: 265px;
-    background: url("../img/new-flag.png") no-repeat;
+    background: url("../../img/new-flag.png") no-repeat;
   }
 }
 .promo-section__title {

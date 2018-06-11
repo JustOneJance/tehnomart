@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 
 .page-header {
   display: flex;
@@ -33,7 +33,7 @@
   top: 10px;
   height: 20px;
   width: 20px;
-  background: url("../img/icon-home.png") no-repeat center, center;
+  background: url("../../img/icon-home.png") no-repeat center, center;
 }
 .page-header__link--bookmarts:before {
   position: absolute;
@@ -42,7 +42,7 @@
   top: 10px;
   height: 20px;
   width: 20px;
-  background: url("../img/icon-home.png") no-repeat center, center;
+  background: url("../../img/icon-home.png") no-repeat center, center;
 }
 .page-header__link--bookmarts:hover,
 .page-header__link--cart:hover {
@@ -68,6 +68,8 @@
   }
   &:focus {
     background-color: #ffffff;
+    color: #000000;
+    width: 200px;
   }
 }
 .page-header__btn-search {
@@ -90,7 +92,6 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 140px;
   height: 40px;
 
 }

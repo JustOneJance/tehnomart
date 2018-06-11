@@ -1,0 +1,15 @@
+@import "../variables";
+@import "wrap-header";
+@import "main-navigation";
+@import "tel";
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 280px;
+  padding-top: 45px;
+  padding-left: $margin-content;
+  padding-right: $margin-content;
+  background-color: $light-blue;
+}
