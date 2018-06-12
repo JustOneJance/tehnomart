@@ -22,6 +22,7 @@ a {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+  outline: none;
   border: none;
   cursor: pointer;
   background-color: #ee3643;
@@ -34,7 +35,14 @@ a {
   &--green {
     background-color: #63a63e;
   }
-
+  &--curt {
+    width: 220px;
+  }
+  &--curt-white {
+    width: 220px;
+    background-color: #ffffff;
+    color: #000000;
+  }
 }
 .flex-container-row {
   display: flex;
@@ -65,4 +73,14 @@ a {
   line-height: 90px;
   font-weight: 400;
   padding-left: 30px;
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 265px;
 }

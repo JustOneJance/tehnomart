@@ -1,0 +1,44 @@
+.add-curt {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 620px;
+  height: 275px;
+  border-top: 10px solid #ee3643 ;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.75)
+}
+
+.add-curt__text {
+  display: block;
+  height: 165px;
+  background:  #ffffff url("../img/curt.png") no-repeat 60px 50px;
+  width: 100%;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  text-align: center;
+  line-height: 165px;
+}
+
+.add-curt__buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110px;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.close {
+  position: absolute;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  right: 10px;
+  top: 10px;
+  background: url("../img/close.png") no-repeat;
+}

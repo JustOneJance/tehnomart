@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <head>
         <meta charset="UTF-8">
         <title class="title">Tehnomart-main</title>
@@ -19,6 +19,14 @@
             </form>
         </header>
         <main class="main-container">
+            <div class="add-curt">
+                <button class="close"></button>
+                <span class="add-curt__text">Товар добавлен в корзину!</span>
+                <div class="add-curt__buttons">
+                    <button class="btn btn--curt">Оформить заказ</button>
+                    <button class="btn btn--curt-white">Продолжить покупки</button>
+                </div>
+            </div>
             <div class="main-header">
                 <div class="wrap-header">
                     <span class="wrap-header__description">
@@ -59,7 +67,7 @@
                     </ul>
                 </nav>
             </div>
-            <div class="wrap wrap--whate">
+            <div class="wrap wrap--white">
                 <div class="flex-container-row">
                     <section class="promo-section promo-section--materials promo-section--new">
                         <h3 class="promo-section__title ">Материалы</h3>
@@ -200,20 +208,33 @@
                 Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
                 <div class="flex-container-row">
                     <div class="service-list">
-                        <input type="radio" checked class="service-list__radio" name="service-list" id="delivery">
+                        <input type="radio" checked class="service-list__radio delivery" name="service-list" id="delivery">
                         <label for="delivery" class="service-list__label">Доставка</label>
-                        <input type="radio" class="service-list__radio" name="service-list" id="guaranty">
+                        <input type="radio" class="service-list__radio guarantly" name="service-list" id="guaranty">
                         <label for="guaranty" class="service-list__label">Гарантия</label>
-                        <input type="radio" class="service-list__radio service-list__test" name="service-list" id="credit">
+                        <input type="radio" class="service-list__radio credit" name="service-list" id="credit">
                         <label for="credit" class="service-list__label">Кредит</label>
                         <div class="service-list__delivery">
                             <h3 class="service-list__title">доставка</h3>
-                            <span class="service-list__text">Мы с удовольствием доставим ваш товар прямо
+                            <span class="service-list__text">Мы с удовольствием доставим ваш товар прямо<br>
                                 к вашему подъезду совершенно бесплатно!<br>
                                 Ведь мы неплохо заработаем,<br>
                                 поднимая его на ваш этаж!</span>
                         </div>
-
+                        <div class="service-list__guarantly">
+                            <h3 class="service-list__title">гарантия</h3>
+                            <span class="service-list__text">Если купленный у нас товар поломается или заискрит,<br>
+                            а также в случае пожара, спровоцированного его возгаранием,<br>
+                            вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                            сгоревший товар на новый.<br>
+                            Дом уж восстановите как-нибудь сами.</span>
+                        </div>
+                        <div class="service-list__credit">
+                            <h3 class="service-list__title">кредит</h3>
+                            <span class="service-list__text">Залезть в долговую яму стало проще!<br>
+                            Кредитные консультанты придут к вам на помощь.</span>
+                            <button class="btn service-list__btn">Отправить заявку</button>
+                        </div>
                     </div>
                 </div>
             </div>

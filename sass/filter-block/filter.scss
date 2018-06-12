@@ -1,4 +1,4 @@
-@import "variables";
+@import "../variables";
 .filter {
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
   display: inline-block;
   width: 27px;
   height: 23px;
-  background: url("../img/checkbox-off.png") 1px no-repeat;
+  background: url("../../img/checkbox-off.png") 1px no-repeat;
   position: absolute;
   left: -15px;
 }
@@ -65,7 +65,7 @@
   display: inline-block;
   width: 27px;
   height: 23px;
-  background: url("../img/checkbox-on.png") 1px no-repeat;
+  background: url("../../img/checkbox-on.png") 1px no-repeat;
   position: absolute;
   left: -15px;
 }
@@ -90,7 +90,7 @@
   display: inline-block;
   width: 27px;
   height: 25px;
-  background: url("../img/radio-off.png") 1px no-repeat;
+  background: url("../../img/radio-off.png") 1px no-repeat;
   position: absolute;
   left: -13px
 }
@@ -99,7 +99,7 @@
   display: inline-block;
   width: 27px;
   height: 25px;
-  background: url("../img/radio-on.png") 1px no-repeat;
+  background: url("../../img/radio-on.png") 1px no-repeat;
   position: absolute;
   left: -13px;
 }

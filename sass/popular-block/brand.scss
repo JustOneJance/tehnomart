@@ -1,0 +1,17 @@
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
+  margin-top: 20px;
+  vertical-align: middle;
+  &:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5), 0 0px 28px rgba(0,0,0,0.25);
+  }
+  &:focus {
+    opacity: 0.3;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  }
+}

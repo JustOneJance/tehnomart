@@ -1,0 +1,93 @@
+.service-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 20%;
+  min-width: 140px;
+  padding-bottom: 200px;
+}
+
+.service-list__radio {
+  display: none;
+}
+
+.service-list__label {
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #32425c;
+  text-align: start;
+  padding-left: 20px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.service-list__radio:checked + .service-list__label {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.service-list__title {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+  color: #32425c;
+  margin: 0;
+}
+
+.service-list__delivery,
+.service-list__guarantly,
+.service-list__credit {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: 0;
+}
+
+.delivery:checked ~ .service-list__delivery {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  clip: auto;
+  width: 400%;
+  height: 200px;
+  left: 90%;
+  padding-left: 80px;
+  background: url("../img/delivery.png") no-repeat;
+  background-position: 90% 10% ;
+}
+
+.guarantly:checked ~ .service-list__guarantly {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  clip: auto;
+  width: 400%;
+  height: 200px;
+  left: 90%;
+  padding-left: 80px;
+  background: url("../img/guarantly.png") no-repeat;
+  background-position: 90% 10% ;
+}
+
+.credit:checked ~ .service-list__credit {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  clip: auto;
+  width: 400%;
+  height: 200px;
+  left: 90%;
+  padding-left: 80px;
+  background: url("../img/credit.png") no-repeat;
+  background-position: 90% 10% ;
+}
+.service-list__btn {
+  margin-top: 30px;
+  width: 195px;
+}
