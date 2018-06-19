@@ -14,31 +14,27 @@ var reload = browserSync.reload;
 var pngquant = require('imagemin-pngquant');
 var watch = require('gulp-watch');
 var rimraf = require('rimraf');
+var svgstore = require('gulp-svgstore');
+var svgmin = require('gulp-svgmin');
 
-/**gulp.task("style", function () {
-    gulp.src("sass/style.scss")
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(postcss([
-
-            autoprefixer({browsers: [
-                    "last 2 versions"
-             ]})
-
-        ]))
-        .pipe(gulp.dest("css"))
-        .pipe(server.stream());
-
+gulp.task('svgstore', function () {
+    return gulp
+        .src('src/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = path.basename(file.relative, path.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('build'));
 });
-gulp.task("serve", ["style"], function() {
-    server.init({
-        server: "."
-    });
 
- //   gulp.watch("sass/** /*.scss", ["style"]);
-    gulp.watch("*.html")
-        .on("change", server.reload);
-}); */
 var path = {
     build: {
         html: 'build/',
@@ -102,14 +98,14 @@ gulp.task("style:build", function () {
 });
 
 gulp.task('image:build', function () {
-    gulp.src(path.src.img) //Выберем наши картинки
-        .pipe(imagemin({ //Сожмем их
+    gulp.src(path.src.img)
+        .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()],
             interlaced: true
         }))
-        .pipe(gulp.dest(path.build.img)) //И бросим в build
+        .pipe(gulp.dest(path.build.img)) //
         .pipe(reload({stream: true}));
 });
 
