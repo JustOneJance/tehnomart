@@ -6,6 +6,7 @@
         <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <script src="add-svg-sprite.js"></script>
     </head>
     <body>
         <header class="page-header">
@@ -35,10 +36,16 @@
                         и интструменов тдля ремонта
                     </span>
                     <div class="wrap-header__contacts">
-                        <a class="tel" href="tel:+7 (812) 555 05 55">+7(812)555-05-55</a>
+                        <a class="tel" href="tel:+7 (812) 555 05 55">
+                            <svg class="icon">
+                                <use xlink:href="#icon-user"></use>
+                            </svg>
+                            +7(812)555-05-55
+                        </a>
                         <span class="wrap-header__adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
                     </div>
                     <a class="login" href=""> Войти</a>
+
                     <a class="registration" href="">Регистрация</a>
                 </div>
                 <nav class="main-navigation">
