@@ -14,37 +14,11 @@ var reload = browserSync.reload;
 var pngquant = require('imagemin-pngquant');
 var watch = require('gulp-watch');
 var rimraf = require('rimraf');
-var svgSprite = require('gulp-svg-sprites');
+var svgstore = require('gulp-svgstore');
 var svgmin = require('gulp-svgmin');
-var cheerio = require('gulp-cheerio');
-var replace = require('gulp-replace');
+var stuff = require('path');
+var inject = require('gulp-inject');
 
-gulp.task('svgSpriteBuild', function () {
-    return gulp.src('src/svg/*.svg')
-        .pipe(svgmin({
-            js2svg: {
-                pretty: true
-            }
-        }))
-        .pipe(cheerio({
-            run: function ($) {
-                $('[fill]').removeAttr('fill');
-                $('[style]').removeAttr('style');
-            },
-            parserOptions: { xmlMode: true }
-        }))
-        .pipe(replace('&gt;', '>'))
-        .pipe(svgSprite({
-                mode: "symbols",
-                preview: false,
-                selector: "icon-%f",
-                svg: {
-                    symbols: 'symbol_sprite.html'
-                }
-            }
-        ))
-        .pipe(gulp.dest('build/'));
-});
 
 var path = {
     build: {
@@ -59,17 +33,55 @@ var path = {
         js: 'src/js/main.js',
         style: 'src/sass/style.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        svg: 'src/svg/*.svg'
     },
     watch: {
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        svg: 'src/svg/*.svg'
     },
     clean: './build'
 };
+
+
+gulp.task('svgstore', function () {
+    return gulp
+        .src('src/svg/*.svg')
+        .pipe(svgmin(function (file) {
+            var prefix = stuff.basename(file.relative, stuff.extname(file.relative));
+            return {
+                plugins: [{
+                    cleanupIDs: {
+                        prefix: prefix + '-',
+                        minify: true
+                    }
+                }]
+            }
+        }))
+        .pipe(svgstore())
+        .pipe(gulp.dest('build'));
+});
+
+
+
+gulp.task('svgstore', function () {
+    var svgs = gulp
+        .src('src/svg/*.svg')
+        .pipe(svgstore({ inlineSvg: true }));
+
+    function fileContents (filePath, file) {
+        return file.contents.toString();
+    }
+
+    return gulp
+        .src('src/index.html', 'src/tehnomart')
+        .pipe(inject(svgs, { transform: fileContents }))
+        .pipe(gulp.dest('build'));
+});
 
 var config = {
     server: {

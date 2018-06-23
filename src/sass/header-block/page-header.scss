@@ -26,24 +26,7 @@
   padding-left: 50px;
   color: #ffffff;
 }
-.page-header__link--cart::before {
-  position: absolute;
-  content: "";
-  left: 20px;
-  top: 10px;
-  height: 20px;
-  width: 20px;
-  background: url("../../img/icon-home.png") no-repeat center, center;
-}
-.page-header__link--bookmarts:before {
-  position: absolute;
-  content: "";
-  left: 20px;
-  top: 10px;
-  height: 20px;
-  width: 20px;
-  background: url("../../img/icon-home.png") no-repeat center, center;
-}
+
 .page-header__link--bookmarts:hover,
 .page-header__link--cart:hover {
   background-color: #212a3a;
@@ -82,7 +65,7 @@
   width: 30px;
   height: 40px;
   border: none;
-  background: url("../img/icon-home.png") no-repeat center,center;
+  background-color: #293449;
   &:hover {
     background-color: #212a3a;
   }

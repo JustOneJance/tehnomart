@@ -6,16 +6,30 @@
         <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <script src="add-svg-sprite.js"></script>
     </head>
     <body>
+
         <header class="page-header">
             <a class="logo" href="">техномарт</a>
             <form class="page-header__flex-container" action="#" method="get">
-                <button class="page-header__btn-search" type="submit"></button>
+                <button class="page-header__btn-search" type="submit">
+                    <svg class="icon-search">
+                        <use xlink:href="svg.svg#search"></use>
+                    </svg>
+                </button>
                 <input class="page-header__search" placeholder="Поиск" type="search" name="search">
-                <a href="" class="page-header__link page-header__link--bookmarts">Закладки:0</a>
-                <a href="" class="page-header__link page-header__link--cart">Корзина:0</a>
+                <a href="" class="page-header__link page-header__link--bookmarts">
+                    <svg class="icon-bookmark">
+                        <use xlink:href="svg.svg#bookmart"></use>
+                    </svg>
+                    <span class="text">Закладки:0</span>
+                </a>
+                <a href="" class="page-header__link page-header__link--cart">
+                    <svg class="icon-cart">
+                        <use xlink:href="svg.svg#cart"></use>
+                    </svg>
+                    <span class="text">Корзина:0</span>
+                </a>
                 <button class="btn btn--green">Оформить заказ</button>
             </form>
         </header>
@@ -37,15 +51,19 @@
                     </span>
                     <div class="wrap-header__contacts">
                         <a class="tel" href="tel:+7 (812) 555 05 55">
-                            <svg class="icon">
-                                <use xlink:href="#icon-user"></use>
+                            <svg class="icon-phone">
+                                <use xlink:href="svg.svg#phone"></use>
                             </svg>
-                            +7(812)555-05-55
+                            <span class="text">  +7(812)555-05-55</span>
                         </a>
                         <span class="wrap-header__adress">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
                     </div>
-                    <a class="login" href=""> Войти</a>
-
+                    <a class="login" href="">
+                        <svg class="icon-login">
+                            <use xlink:href="svg.svg#login"></use>
+                        </svg>
+                        <span>Войти</span>
+                    </a>
                     <a class="registration" href="">Регистрация</a>
                 </div>
                 <nav class="main-navigation">
